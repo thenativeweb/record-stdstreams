@@ -1,0 +1,31 @@
+{
+  "name": "record-stdstreams",
+  "version": "0.0.0",
+  "description": "record-stdstreams captures process.stdout and process.stderr.",
+  "contributors": [
+    {
+      "name": "Golo Roden",
+      "email": "golo.roden@thenativeweb.io"
+    },
+    {
+      "name": "Matthias Wagler",
+      "email": "matthias.wagler@thenativeweb.io"
+    },
+    {
+      "name": "Michael Scherer",
+      "email": "mail@michael-scherer.net"
+    }
+  ],
+  "main": "lib/record.js",
+  "dependencies": {},
+  "devDependencies": {
+    "assertthat": "0.3.0",
+    "grunt": "0.4.5",
+    "tourism": "0.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thenativeweb/record-stdstreams.git"
+  },
+  "license": "MIT"
+}
