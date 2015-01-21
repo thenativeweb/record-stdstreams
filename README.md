@@ -22,6 +22,7 @@ record(function (stop) {
   console.log('foo');
   console.error('bar');
   // ...
+  stop();
 }, function (stdoutText, stderrText) {
   console.log(stdoutText); // => 'foo\n'
   console.log(stderrText); // => 'bar\n'
