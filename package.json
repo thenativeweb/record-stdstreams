@@ -19,9 +19,9 @@
   "main": "lib/record.js",
   "dependencies": {},
   "devDependencies": {
-    "assertthat": "0.3.0",
+    "assertthat": "0.4.2",
     "grunt": "0.4.5",
-    "tourism": "0.10.2"
+    "tourism": "0.13.2"
   },
   "repository": {
     "type": "git",
