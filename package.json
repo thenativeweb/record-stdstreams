@@ -27,5 +27,9 @@
     "type": "git",
     "url": "git://github.com/thenativeweb/record-stdstreams.git"
   },
+  "keywords": [
+    "stderr",
+    "stdout"
+  ],
   "license": "MIT"
 }
