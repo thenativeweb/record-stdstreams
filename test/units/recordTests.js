@@ -2,7 +2,7 @@
 
 const assert = require('assertthat');
 
-const record = require('../../lib/record.js');
+const record = require('../../src/record.js');
 
 suite('record', () => {
   test('is a function.', done => {
