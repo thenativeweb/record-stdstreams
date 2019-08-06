@@ -20,7 +20,7 @@
       "email": "jan-hendrik.grundhoefer@thenativeweb.io"
     }
   ],
-  "main": "dist/record.js",
+  "main": "lib/record.js",
   "dependencies": {},
   "devDependencies": {
     "assertthat": "3.2.0",
