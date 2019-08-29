@@ -44,6 +44,16 @@ suite('record', (): void => {
       assert.that(stdout).is.equalTo('foo\nbar\n');
       assert.that(stderr).is.equalTo('');
     });
+
+    test('accepts write with a single parameter.', async (): Promise<void> => {
+      const stop = record();
+
+      process.stdout.write('foo');
+
+      const { stdout } = stop();
+
+      assert.that(stdout).is.equalTo('foo');
+    });
   });
 
   suite('stderr', (): void => {
@@ -72,6 +82,16 @@ suite('record', (): void => {
 
       assert.that(stdout).is.equalTo('');
       assert.that(stderr).is.equalTo('foo\nbar\n');
+    });
+
+    test('accepts write with a single parameter.', async (): Promise<void> => {
+      const stop = record();
+
+      process.stderr.write('foo');
+
+      const { stderr } = stop();
+
+      assert.that(stderr).is.equalTo('foo');
     });
   });
 });

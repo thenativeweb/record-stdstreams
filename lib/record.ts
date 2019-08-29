@@ -9,29 +9,37 @@ const record = function (): (() => ({ stdout: string; stderr: string })) {
   function collectStderr (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
     stderr += text.toString();
 
-    if (typeof text === 'string' && typeof encoding === 'string') {
-      return oldStderrWrite(text, encoding, cb);
-    }
+    if (typeof text === 'object') {
+      if (typeof encoding === 'string') {
+        throw new Error('Invalid operation.');
+      }
 
-    if (typeof encoding === 'function') {
       return oldStderrWrite(text, encoding);
     }
 
-    throw new Error('Invalid operation.');
+    if (typeof encoding === 'function') {
+      throw new Error('Invalid operation.');
+    }
+
+    return oldStderrWrite(text, encoding, cb);
   }
 
   function collectStdout (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
     stdout += text.toString();
 
-    if (typeof text === 'string' && typeof encoding === 'string') {
-      return oldStdoutWrite(text, encoding, cb);
-    }
+    if (typeof text === 'object') {
+      if (typeof encoding === 'string') {
+        throw new Error('Invalid operation.');
+      }
 
-    if (typeof encoding === 'function') {
       return oldStdoutWrite(text, encoding);
     }
 
-    throw new Error('Invalid operation.');
+    if (typeof encoding === 'function') {
+      throw new Error('Invalid operation.');
+    }
+
+    return oldStdoutWrite(text, encoding, cb);
   }
 
   process.stderr.write = collectStderr;
