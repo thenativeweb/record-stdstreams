@@ -9,10 +9,6 @@ const record = function (): (() => ({ stdout: string; stderr: string })) {
   function collectStderr (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
     stderr += text.toString();
 
-    if (typeof text !== 'string' && (typeof encoding === 'string' || encoding === undefined)) {
-      throw new Error('Invalid operation.');
-    }
-
     if (typeof text === 'object') {
       if (typeof encoding === 'string') {
         throw new Error('Invalid operation.');
@@ -30,10 +26,6 @@ const record = function (): (() => ({ stdout: string; stderr: string })) {
 
   function collectStdout (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
     stdout += text.toString();
-
-    if (typeof text !== 'string' && (typeof encoding === 'string' || encoding === undefined)) {
-      throw new Error('Invalid operation.');
-    }
 
     if (typeof text === 'object') {
       if (typeof encoding === 'string') {
