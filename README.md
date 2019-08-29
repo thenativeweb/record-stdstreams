@@ -1,6 +1,16 @@
 # record-stdstreams
 
-record-stdstreams captures process.stdout and process.stderr.
+record-stdstreams records process.stdout and process.stderr.
+
+## Status
+
+| Category         | Status                                                                                                                                                         |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Version          | [![npm](https://img.shields.io/npm/v/record-stdstreams)](https://www.npmjs.com/package/record-stdstreams)                                                      |
+| Dependencies     | ![David](https://img.shields.io/david/thenativeweb/record-stdstreams)                                                                                          |
+| Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/record-stdstreams)                                                                                      |
+| Build            | [![CircleCI](https://img.shields.io/circleci/build/github/thenativeweb/record-stdstreams)](https://circleci.com/gh/thenativeweb/record-stdstreams/tree/master) |
+| License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/record-stdstreams)                                                                                |
 
 ## Installation
 
@@ -13,7 +23,13 @@ $ npm install record-stdstreams
 First you need to integrate record-stdstreams into your application.
 
 ```javascript
-const record = require('record-stdstreams');
+const record = require('record-stdstreams').default;
+```
+
+If you use TypeScript, use the following code instead:
+
+```typescript
+import record from 'record-stdstreams';
 ```
 
 To capture output call the `record` function. It returns a `stop` function. To stop capturing call this function. The result are the captured `stdout` and `stderr` streams.
@@ -37,14 +53,3 @@ To build this module use [roboter](https://www.npmjs.com/package/roboter).
 ```shell
 $ npx roboter
 ```
-
-## License
-
-The MIT License (MIT)
-Copyright (c) 2015-2019 the native web.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

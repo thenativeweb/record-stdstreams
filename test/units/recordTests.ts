@@ -1,15 +1,12 @@
-'use strict';
+import assert from 'assertthat';
+import record from '../../lib/record';
 
-const assert = require('assertthat');
-
-const record = require('../../lib/record.js');
-
-suite('record', () => {
-  test('is a function.', async () => {
+suite('record', (): void => {
+  test('is a function.', async (): Promise<void> => {
     assert.that(record).is.ofType('function');
   });
 
-  test('returns a function and records empty strings.', async () => {
+  test('returns a function and records empty strings.', async (): Promise<void> => {
     const stop = record();
 
     assert.that(stop).is.ofType('function');
@@ -20,8 +17,8 @@ suite('record', () => {
     assert.that(stderr).is.equalTo('');
   });
 
-  suite('stdout', () => {
-    test('records a single call to console.log.', async () => {
+  suite('stdout', (): void => {
+    test('records a single call to console.log.', async (): Promise<void> => {
       const stop = record();
 
       /* eslint-disable no-console */
@@ -34,7 +31,7 @@ suite('record', () => {
       assert.that(stderr).is.equalTo('');
     });
 
-    test('records multiple calls to console.log.', async () => {
+    test('records multiple calls to console.log.', async (): Promise<void> => {
       const stop = record();
 
       /* eslint-disable no-console */
@@ -49,8 +46,8 @@ suite('record', () => {
     });
   });
 
-  suite('stderr', () => {
-    test('records a single call to console.error.', async () => {
+  suite('stderr', (): void => {
+    test('records a single call to console.error.', async (): Promise<void> => {
       const stop = record();
 
       /* eslint-disable no-console */
@@ -63,7 +60,7 @@ suite('record', () => {
       assert.that(stderr).is.equalTo('foo\n');
     });
 
-    test('records multiple calls to console.error.', async () => {
+    test('records multiple calls to console.error.', async (): Promise<void> => {
       const stop = record();
 
       /* eslint-disable no-console */
