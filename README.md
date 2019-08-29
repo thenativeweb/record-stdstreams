@@ -2,6 +2,16 @@
 
 record-stdstreams records process.stdout and process.stderr.
 
+## Status
+
+| Category         | Status                                                                                                                                                         |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Version          | [![npm](https://img.shields.io/npm/v/record-stdstreams)](https://www.npmjs.com/package/record-stdstreams)                                                      |
+| Dependencies     | ![David](https://img.shields.io/david/thenativeweb/record-stdstreams)                                                                                          |
+| Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/record-stdstreams)                                                                                      |
+| Build            | [![CircleCI](https://img.shields.io/circleci/build/github/thenativeweb/record-stdstreams)](https://circleci.com/gh/thenativeweb/record-stdstreams/tree/master) |
+| License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/record-stdstreams)                                                                                |
+
 ## Installation
 
 ```shell
