@@ -48,7 +48,7 @@ console.log(stderr); // => 'bar\n'
 
 ## Suppressing output during recording
 
-If you want to record the stdstreams and suppress their outputs, cass record with `false` as parameter:
+If you want to record the stdstreams and suppress their outputs, call record with `false` as parameter:
 
 ```javascript
 const stop = record(false);
