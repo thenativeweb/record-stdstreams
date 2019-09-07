@@ -42,22 +42,27 @@ console.error('bar');
 
 const { stdout, stderr } = stop();
 
-console.log(stdout); // => 'foo\n'
-console.log(stderr); // => 'bar\n'
+console.log(stdout);
+// => 'foo\n'
+
+console.log(stderr);
+// => 'bar\n'
 ```
 
-## Suppressing output during recording
+### Suppressing output during recording
 
-If you want to record the stdstreams and suppress their outputs, call record with `false` as parameter:
+To record the std streams, but suppress their output, call record with `false` as parameter:
 
 ```javascript
 const stop = record(false);
 
-console.log('foo'); // => does not produce output
+console.log('foo');
+// => Does not produce any output.
 
 const { stdout } = stop();
 
-console.log(stdout); // => 'foo\n'
+console.log(stdout);
+// => 'foo\n'
 ```
 
 ## Running the build
