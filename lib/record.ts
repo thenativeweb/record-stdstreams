@@ -1,53 +1,37 @@
 /* eslint-disable func-style, @typescript-eslint/unbound-method */
-const record = function (): (() => ({ stdout: string; stderr: string })) {
+const record = function (passThrough = true): (() => ({ stdout: string; stderr: string })) {
   const oldStderrWrite = process.stderr.write.bind(process.stderr),
         oldStdoutWrite = process.stdout.write.bind(process.stdout);
 
   let stderr = '',
       stdout = '';
 
-  function collectStderr (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
+  const collectStderr = (text: any, encoding?: any, cb?: any): boolean => {
     stderr += text.toString();
 
-    if (typeof text === 'object') {
-      if (typeof encoding === 'string') {
-        throw new Error('Invalid operation.');
-      }
-
-      return oldStderrWrite(text, encoding);
-    }
-
-    if (typeof encoding === 'function') {
-      throw new Error('Invalid operation.');
+    if (!passThrough) {
+      return true;
     }
 
     return oldStderrWrite(text, encoding, cb);
-  }
+  };
 
-  function collectStdout (text: string | Uint8Array, encoding?: string | ((err?: Error | null) => void), cb?: (err?: Error | null) => void): boolean {
+  const collectStdout = (text: any, encoding?: any, cb?: any): boolean => {
     stdout += text.toString();
 
-    if (typeof text === 'object') {
-      if (typeof encoding === 'string') {
-        throw new Error('Invalid operation.');
-      }
-
-      return oldStdoutWrite(text, encoding);
-    }
-
-    if (typeof encoding === 'function') {
-      throw new Error('Invalid operation.');
+    if (!passThrough) {
+      return true;
     }
 
     return oldStdoutWrite(text, encoding, cb);
-  }
+  };
 
   process.stderr.write = collectStderr;
   process.stdout.write = collectStdout;
 
   const stop = function (): ({ stdout: string; stderr: string }) {
-    process.stderr.write = oldStderrWrite.bind(process.stderr);
-    process.stdout.write = oldStdoutWrite.bind(process.stdout);
+    process.stderr.write = oldStderrWrite;
+    process.stdout.write = oldStdoutWrite;
 
     return { stdout, stderr };
   };

@@ -46,6 +46,20 @@ console.log(stdout); // => 'foo\n'
 console.log(stderr); // => 'bar\n'
 ```
 
+## Suppressing output during recording
+
+If you want to record the stdstreams and suppress their outputs, call record with `false` as parameter:
+
+```javascript
+const stop = record(false);
+
+console.log('foo'); // => does not produce output
+
+const { stdout } = stop();
+
+console.log(stdout); // => 'foo\n'
+```
+
 ## Running the build
 
 To build this module use [roboter](https://www.npmjs.com/package/roboter).
