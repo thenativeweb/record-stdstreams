@@ -31,7 +31,7 @@
     "@types/node": "12.7.8",
     "@types/sinon": "7.0.13",
     "assertthat": "4.0.2",
-    "roboter": "8.0.0",
+    "roboter": "8.1.0",
     "sinon": "7.5.0"
   },
   "repository": {
