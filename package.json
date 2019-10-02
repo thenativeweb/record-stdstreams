@@ -29,7 +29,7 @@
   "dependencies": {},
   "devDependencies": {
     "@types/node": "12.7.8",
-    "@types/sinon": "7.0.13",
+    "@types/sinon": "7.5.0",
     "assertthat": "4.0.2",
     "roboter": "8.1.1",
     "sinon": "7.5.0"
