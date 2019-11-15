@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/node": "12.12.7",
     "@types/sinon": "7.5.0",
-    "assertthat": "5.0.1",
+    "assertthat": "5.0.2",
     "roboter": "9.2.0",
     "sinon": "7.5.0"
   },
