@@ -1,5 +1,5 @@
-import assert from 'assertthat';
-import record from '../../lib/record';
+import { assert } from 'assertthat';
+import { record } from '../../lib/record';
 import sinon from 'sinon';
 
 suite('record', (): void => {

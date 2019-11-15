@@ -23,13 +23,13 @@ $ npm install record-stdstreams
 First you need to integrate record-stdstreams into your application.
 
 ```javascript
-const record = require('record-stdstreams').default;
+const { record } = require('record-stdstreams');
 ```
 
 If you use TypeScript, use the following code instead:
 
 ```typescript
-import record from 'record-stdstreams';
+import { record } from 'record-stdstreams';
 ```
 
 To capture output call the `record` function. It returns a `stop` function. To stop capturing call this function. The result are the captured `stdout` and `stderr` streams.

@@ -40,4 +40,4 @@ const record = function (passThrough = true): (() => ({ stdout: string; stderr: 
 };
 /* eslint-enable func-style, @typescript-eslint/unbound-method */
 
-export default record;
+export { record };
