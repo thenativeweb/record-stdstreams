@@ -31,7 +31,7 @@
     "@types/node": "12.12.16",
     "@types/sinon": "7.5.1",
     "assertthat": "5.1.0",
-    "roboter": "10.0.3",
+    "roboter": "10.0.4",
     "semantic-release-configuration": "1.0.6",
     "sinon": "7.5.0"
   },
