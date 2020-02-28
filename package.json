@@ -28,7 +28,7 @@
   "types": "build/lib/record.d.ts",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "13.7.6",
+    "@types/node": "13.7.7",
     "@types/sinon": "7.5.2",
     "assertthat": "5.1.0",
     "roboter": "11.1.0",
