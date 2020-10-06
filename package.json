@@ -1,6 +1,6 @@
 {
   "name": "record-stdstreams",
-  "version": "3.0.19",
+  "version": "3.0.20",
   "description": "record-stdstreams captures process.stdout and process.stderr.",
   "contributors": [
     {
