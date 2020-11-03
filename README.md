@@ -65,9 +65,9 @@ console.log(stdout);
 // => 'foo\n'
 ```
 
-## Running the quality assurance
+## Running quality assurance
 
-To build this module use [roboter](https://www.npmjs.com/package/roboter).
+To run quality assurance for this module use [roboter](https://www.npmjs.com/package/roboter):
 
 ```shell
 $ npx roboter
