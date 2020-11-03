@@ -1,3 +1,10 @@
+## [3.0.26](https://github.com/thenativeweb/record-stdstreams/compare/3.0.25...3.0.26) (2020-11-03)
+
+
+### Bug Fixes
+
+* Fix headline for robot section in readme. ([#326](https://github.com/thenativeweb/record-stdstreams/issues/326)) ([64af4a4](https://github.com/thenativeweb/record-stdstreams/commit/64af4a427aefada5f983e053aa246959bad3bd92))
+
 ## [3.0.25](https://github.com/thenativeweb/record-stdstreams/compare/3.0.24...3.0.25) (2020-10-29)
 
 
