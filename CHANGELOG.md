@@ -1,3 +1,10 @@
+## [3.0.33](https://github.com/thenativeweb/record-stdstreams/compare/3.0.32...3.0.33) (2020-12-13)
+
+
+### Bug Fixes
+
+* bump @types/node from 14.14.12 to 14.14.13 ([#371](https://github.com/thenativeweb/record-stdstreams/issues/371)) ([df879ee](https://github.com/thenativeweb/record-stdstreams/commit/df879eeb356f9cdfd20bfc64dffa01b5169c3004))
+
 ## [3.0.32](https://github.com/thenativeweb/record-stdstreams/compare/3.0.31...3.0.32) (2020-12-11)
 
 
