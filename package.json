@@ -1,6 +1,6 @@
 {
   "name": "record-stdstreams",
-  "version": "3.0.45",
+  "version": "3.0.46",
   "description": "record-stdstreams captures process.stdout and process.stderr.",
   "contributors": [
     {
@@ -27,7 +27,7 @@
   "main": "build/lib/record.js",
   "types": "build/lib/record.d.ts",
   "dependencies": {
-    "@types/node": "14.14.32"
+    "@types/node": "14.14.35"
   },
   "devDependencies": {
     "@types/sinon": "9.0.11",
