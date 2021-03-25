@@ -33,7 +33,7 @@
     "@types/sinon": "9.0.11",
     "assertthat": "5.2.6",
     "roboter": "11.6.30",
-    "semantic-release-configuration": "1.0.36",
+    "semantic-release-configuration": "2.0.0",
     "sinon": "10.0.0"
   },
   "repository": {
