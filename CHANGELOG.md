@@ -1,3 +1,10 @@
+## [3.0.47](https://github.com/thenativeweb/record-stdstreams/compare/3.0.46...3.0.47) (2021-03-25)
+
+
+### Bug Fixes
+
+* Migrate from master to main. ([#443](https://github.com/thenativeweb/record-stdstreams/issues/443)) ([9103d50](https://github.com/thenativeweb/record-stdstreams/commit/9103d50086aa1b00aab23f15d85593a0cdfceb58))
+
 ## [3.0.46](https://github.com/thenativeweb/record-stdstreams/compare/3.0.45...3.0.46) (2021-03-19)
 
 
