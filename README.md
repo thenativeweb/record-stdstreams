@@ -9,7 +9,7 @@ record-stdstreams records process.stdout and process.stderr.
 | Version          | [![npm](https://img.shields.io/npm/v/record-stdstreams)](https://www.npmjs.com/package/record-stdstreams) |
 | Dependencies     | ![David](https://img.shields.io/david/thenativeweb/record-stdstreams)                                     |
 | Dev dependencies | ![David](https://img.shields.io/david/dev/thenativeweb/record-stdstreams)                                 |
-| Build            | ![GitHub Actions](https://github.com/thenativeweb/record-stdstreams/workflows/Release/badge.svg?branch=master)   |
+| Build            | ![GitHub Actions](https://github.com/thenativeweb/record-stdstreams/workflows/Release/badge.svg?branch=main)   |
 | License          | ![GitHub](https://img.shields.io/github/license/thenativeweb/record-stdstreams)                           |
 
 ## Installation
