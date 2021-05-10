@@ -1,3 +1,10 @@
+## [3.0.54](https://github.com/thenativeweb/record-stdstreams/compare/3.0.53...3.0.54) (2021-05-10)
+
+
+### Bug Fixes
+
+* bump hosted-git-info from 2.8.8 to 2.8.9 ([#468](https://github.com/thenativeweb/record-stdstreams/issues/468)) ([9c7d7ec](https://github.com/thenativeweb/record-stdstreams/commit/9c7d7ec90f1f099a86328c52d14d79c667b2c8ad))
+
 ## [3.0.53](https://github.com/thenativeweb/record-stdstreams/compare/3.0.52...3.0.53) (2021-05-06)
 
 
