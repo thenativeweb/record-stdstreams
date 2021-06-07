@@ -30,7 +30,7 @@
     "@types/node": "15.6.1"
   },
   "devDependencies": {
-    "@types/sinon": "10.0.1",
+    "@types/sinon": "10.0.2",
     "assertthat": "6.3.0",
     "roboter": "11.7.1",
     "semantic-release-configuration": "2.0.1",
