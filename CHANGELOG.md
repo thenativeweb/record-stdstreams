@@ -1,3 +1,10 @@
+## [3.0.60](https://github.com/thenativeweb/record-stdstreams/compare/3.0.59...3.0.60) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump trim-newlines from 3.0.0 to 3.0.1 ([#486](https://github.com/thenativeweb/record-stdstreams/issues/486)) ([4825f38](https://github.com/thenativeweb/record-stdstreams/commit/4825f38a38cb17864d6608cf91ff7644ac25b044))
+
 ## [3.0.59](https://github.com/thenativeweb/record-stdstreams/compare/3.0.58...3.0.59) (2021-06-08)
 
 
