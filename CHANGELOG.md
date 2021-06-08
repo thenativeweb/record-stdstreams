@@ -1,3 +1,10 @@
+## [3.0.59](https://github.com/thenativeweb/record-stdstreams/compare/3.0.58...3.0.59) (2021-06-08)
+
+
+### Bug Fixes
+
+* bump glob-parent from 5.1.1 to 5.1.2 ([#487](https://github.com/thenativeweb/record-stdstreams/issues/487)) ([34b434c](https://github.com/thenativeweb/record-stdstreams/commit/34b434cbeb4e0f87c2d9d56c67b795ff80c93e86))
+
 ## [3.0.58](https://github.com/thenativeweb/record-stdstreams/compare/3.0.57...3.0.58) (2021-06-07)
 
 
