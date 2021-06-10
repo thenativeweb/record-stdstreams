@@ -1,3 +1,10 @@
+## [3.0.61](https://github.com/thenativeweb/record-stdstreams/compare/3.0.60...3.0.61) (2021-06-10)
+
+
+### Bug Fixes
+
+* bump normalize-url from 6.0.0 to 6.0.1 ([#488](https://github.com/thenativeweb/record-stdstreams/issues/488)) ([cc21a20](https://github.com/thenativeweb/record-stdstreams/commit/cc21a209de92576d7565662535dab4cde523ff01))
+
 ## [3.0.60](https://github.com/thenativeweb/record-stdstreams/compare/3.0.59...3.0.60) (2021-06-08)
 
 
