@@ -1,3 +1,10 @@
+## [3.0.66](https://github.com/thenativeweb/record-stdstreams/compare/3.0.65...3.0.66) (2021-07-26)
+
+
+### Bug Fixes
+
+* bump @types/node from 16.3.3 to 16.4.3 ([#503](https://github.com/thenativeweb/record-stdstreams/issues/503)) ([cdf5828](https://github.com/thenativeweb/record-stdstreams/commit/cdf5828ce170bd998575903a47ed0ec69d93b38a))
+
 ## [3.0.65](https://github.com/thenativeweb/record-stdstreams/compare/3.0.64...3.0.65) (2021-07-19)
 
 
