@@ -1,4 +1,3 @@
-/* eslint-disable func-style, @typescript-eslint/unbound-method */
 const record = function (passThrough = true): (() => ({ stdout: string; stderr: string })) {
   const oldStderrWrite = process.stderr.write.bind(process.stderr),
         oldStdoutWrite = process.stdout.write.bind(process.stdout);
@@ -38,6 +37,5 @@ const record = function (passThrough = true): (() => ({ stdout: string; stderr: 
 
   return stop;
 };
-/* eslint-enable func-style, @typescript-eslint/unbound-method */
 
 export { record };

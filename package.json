@@ -24,6 +24,7 @@
       "email": "hannes.leutloff@thenativeweb.io"
     }
   ],
+  "private": false,
   "main": "build/lib/record.js",
   "types": "build/lib/record.d.ts",
   "dependencies": {
@@ -32,10 +33,11 @@
   "devDependencies": {
     "@types/sinon": "10.0.2",
     "assertthat": "6.3.11",
-    "roboter": "11.7.8",
+    "roboter": "12.1.2",
     "semantic-release-configuration": "2.0.5",
     "sinon": "11.1.2"
   },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git://github.com/thenativeweb/record-stdstreams.git"
