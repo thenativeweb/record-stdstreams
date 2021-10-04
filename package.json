@@ -28,7 +28,7 @@
   "main": "build/lib/record.js",
   "types": "build/lib/record.d.ts",
   "dependencies": {
-    "@types/node": "16.10.1"
+    "@types/node": "16.10.2"
   },
   "devDependencies": {
     "@types/sinon": "10.0.4",
